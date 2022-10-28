@@ -1,10 +1,11 @@
 const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database('test3.db');
+const db = new sqlite3.Database('test2.db');
 
 let schema = `
-create table test(
+create table center(
   id integer primary key,
-  name text
+  名前 text not null,
+  生年月日 text not null
 );
 `
 
